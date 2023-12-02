@@ -15,14 +15,13 @@ header{
     height: 3em;
 }
 
-header > div{
+header div{
     width: 70%;
     margin: 0 auto;
     display: flex; 
     justify-content: space-between;
     height: 100%;
     align-items: center;
-    position: relative; 
 }
 
 header div figure img{
@@ -33,32 +32,32 @@ header div figure img{
     /* vertical-align: middle; */
 }
 
-header div div{
+header div nav{
     display: flex;
     align-items: center;
     gap: 1em;
 }
 
-header div div ul{
+header div nav ul{
     display: flex;
     align-items: center;
     gap: 1em;
 }
 
-header div div ul li{
+header div nav ul li{
     list-style-type: none;
 }
 
-header div div ul li a{
+header div nav ul li a{
     color: white;
     text-decoration: none;
 }
 
-header div div ul li a:hover{
+header div nav ul li a:hover{
     border-bottom: 1px solid white;  
 }
 
-header div div button{
+header div nav button{
     padding: 5px;
     background-color: white;
     border: 0;
@@ -66,10 +65,53 @@ header div div button{
     color: black;
 }
 
-header div div button:hover {
+header div nav button:hover {
     color: gray; 
 }
 
 header div svg{
     display: none; 
+    fill: white;
 }
+
+@media screen and (max-width: 780px){
+    header div{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    header div nav{
+        display: none; 
+    }
+
+    header div svg{
+        display: block;
+    }
+
+    header div svg:hover nav{  
+        display: block; 
+    } 
+
+}
+
+
+@media screen and (max-width: 420px){
+    header div{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    header div nav{
+        display: none; 
+    }
+
+    header div svg{
+        display: block;
+    }
+
+    header div svg:hover > nav{  
+        display: block; 
+    } 
+ 
+}
+
