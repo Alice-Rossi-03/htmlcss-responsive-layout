@@ -74,6 +74,148 @@ header div svg{
     fill: white;
 }
 
+main:first-child section{
+    background-color: white;
+}
+
+/* main #section-01{
+    padding-block: 100px; 
+}
+
+main #section-01 > div{ 
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+main #section-01 > div div{
+    width: calc((100% / 3) - (20px / 3));
+}
+
+#larger-box{
+    display: flex; 
+    padding: 20px;
+}
+
+#larger-box figure img{
+    margin-bottom: -20px;
+    height: 50%;
+}
+
+#larger-box div h3{
+    color: #0084FD; 
+}
+
+#larger-box div p{
+    margin-block: 10px;
+    color: gray;
+    line-height: 150%;
+}
+
+#larger-box div button{ 
+    color: white;
+    padding-inline: 20px;
+    padding-block: 5px;
+    background-color: #0084FD; 
+    border-radius: 10px;
+    border: 0;
+}
+
+#larger-box div button:hover{ 
+    background-color: rgba(0, 132, 253, 0.75); 
+} */
+
+#section-02{
+    background-color: #9792E4;
+}
+
+#section-02 > div{ 
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    box-sizing: content-box;
+    /* flex-wrap: wrap; */
+}
+
+#section-02 div div{
+    width: calc(50% - (30px / 2));
+}
+
+#section-02 div div figure img{ 
+    object-fit: contain;
+    max-width: 100%;
+    margin-block: 50px;
+}
+
+#section-02 div div h3, #section-02 div div p{
+    color: white;
+    padding-block: 10px;
+}
+
+#section-02 div div p{ 
+    font-size: 80%; 
+    line-height: 150%; 
+}
+
+#section-02 div:nth-child(2) h3, #section-02 div:nth-child(2) p{
+    color: black;
+}
+
+#section-02 div:nth-child(2) div{
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+}
+
+#section-02 div:nth-child(2) div figure img{
+    width: 100%;
+    object-fit: contain;
+}
+
+#section-02 div:nth-child(2) div svg{
+    padding: 10px;
+    background-color: #9792E4ff;
+    border-radius: 50%;
+    margin-top: 1em;
+    height: 2em;
+    width: 2em;
+}
+
+#section-03 {
+    padding-block: 70px;
+    background-color: #ffffff;
+}
+
+#section-03 #testimonials-top{
+    width: 70%;
+    margin: 0 auto;
+}
+
+#section-03 #testimonials-top{
+    text-align: center;
+}
+
+#section-03 #testimonials-top h2{
+    color: #9792E4;
+    padding-top: 20px;
+}
+
+#section-03 #testimonials-top div p{
+    font-size: 13px;
+    margin: 20px 0;
+}
+
+
+
+
 @media screen and (max-width: 780px){
     header div{
         width: 90%;
@@ -91,6 +233,29 @@ header div svg{
     header div svg:hover nav{  
         display: block; 
     } 
+
+
+    #section-02 > div{ 
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    
+    #section-02 div div{
+        min-width: 100%;
+    }
+
+    #section-02 div div h3{
+        font-size: 25px;
+    }
+
+    #section-02 div div p{
+        font-size: 18px;
+    }
 
 }
 
@@ -113,5 +278,27 @@ header div svg{
         display: block; 
     } 
  
+    #section-02 > div{ 
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    
+    #section-02 div div{
+        min-width: 100%;
+    }
+
+    #section-02 div div h3{
+        font-size: 40px;
+    }
+
+    #section-02 div div p{
+        font-size: 20px;
+    }
+
 }
 
