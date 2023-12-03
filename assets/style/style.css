@@ -263,6 +263,70 @@ main #section-01 > div div{
     color: white;
 }
 
+#section-04 {
+    background-color: #9792E4;
+}
+
+#section-04 > div {
+    width: 70%;
+    margin: 0 auto;
+    padding-block: 70px;
+}
+
+#section-04 > div h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+#section-04 div div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+#section-04 div div div{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+    
+#section-04 div div div h3, #section-04 div div div h4{
+    color: #9792E4;
+}
+
+#section-04 div div div h3{
+    font-size: 25px;
+}
+
+#section-04 div div div p{
+    font-size: 12px;
+    line-height: 140%;
+    color: gray;
+}
+
+#section-04 div div div{
+    width: calc(30% - 30px);
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+#section-04 div div div button{
+    width: 30%;
+    background-color: #9792E4;
+    color: white; 
+    border: 0;
+    padding-inline: 10px;
+    padding-block: 5px;
+    border-radius: 10px 
+}
+
+#section-04 div div div button:hover{
+    background-color: rgba(151, 146, 228, 0.75);
+}
+
 
 @media screen and (max-width: 780px){
     header div{
@@ -316,6 +380,21 @@ main #section-01 > div div{
     #section-03 #testimonials-bottom div div cite { 
         font-size: 10px;
     }
+
+
+    #section-04 > div {
+        width: 90%;
+    }
+
+    #section-04 div div div{
+        width: calc(50% - 30px);
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+   
+
 }
 
 
@@ -380,5 +459,17 @@ main #section-01 > div div{
     #section-03 #testimonials-bottom div div{
         width: 100%; 
         text-align: center;
+    }
+
+
+    #section-04 > div {
+        width: 90%;
+    }
+
+    #section-04 div div div{
+        width: calc(100%);
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
     }
 }
