@@ -205,15 +205,63 @@ main #section-01 > div div{
 
 #section-03 #testimonials-top h2{
     color: #9792E4;
-    padding-top: 20px;
+    padding: 20px 0;
+    font-size: 30px;
 }
 
-#section-03 #testimonials-top div p{
-    font-size: 13px;
-    margin: 20px 0;
+#section-03 #testimonials-bottom{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+    margin-block: 40px;
 }
 
+#section-03 #testimonials-bottom > div{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: #9792E4;
+    border-radius: 30px;
+    padding: 10px;
+}
 
+#section-03 #testimonials-bottom div figure{
+    width: 30%;
+    border-radius: 50%;
+}
+
+#section-03 #testimonials-bottom div div{
+    width: calc(70% - 30px);
+}
+
+#section-03 #testimonials-bottom div figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    border-radius: 50%;
+}
+
+#section-03 #testimonials-bottom div div blockquote { 
+    color: white;
+    font-size: 12px;
+    line-height: 140%;
+    margin-bottom: 10px; 
+}
+
+#section-03 #testimonials-bottom div div blockquote svg { 
+    fill: white;
+}
+
+#section-03 #testimonials-bottom div div cite { 
+    text-transform: uppercase;
+    text-decoration: none; 
+    font-style: normal;  
+    color: white;
+}
 
 
 @media screen and (max-width: 780px){
@@ -257,7 +305,19 @@ main #section-01 > div div{
         font-size: 18px;
     }
 
+    #section-03 #testimonials-bottom, #section-03 #testimonials-top{
+        width: 90%; 
+    }
+
+    #section-03 #testimonials-bottom div div blockquote { 
+        font-size: 11px;
+    }
+
+    #section-03 #testimonials-bottom div div cite { 
+        font-size: 10px;
+    }
 }
+
 
 
 @media screen and (max-width: 420px){
@@ -300,5 +360,25 @@ main #section-01 > div div{
         font-size: 20px;
     }
 
-}
+    #section-03 #testimonials-bottom > div{
+        flex-direction: column;
+    }
 
+    #section-03 #testimonials-bottom, #section-03 #testimonials-top{
+        width: 90%; 
+    }
+
+    #section-03 #testimonials-bottom div div blockquote { 
+        font-size: 11px;
+        line-height: 160%;
+    }
+
+    #section-03 #testimonials-bottom div div cite { 
+        font-size: 10px;
+    }
+
+    #section-03 #testimonials-bottom div div{
+        width: 100%; 
+        text-align: center;
+    }
+}
