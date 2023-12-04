@@ -486,6 +486,89 @@ header div svg{
     fill: white;
 }
 
+#section-06{
+    background-color: #9792E4;
+    padding-block: 50px;
+}
+
+#section-06 div{
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+
+#section-06 div div{
+    color: lightgray;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+#section-06 div h3{
+    color: white;
+    font-size: 180%;
+}
+
+#section-06 div h2{
+    color: #FDC05F;
+    font-size: 350%;
+}
+
+#section-06 div p{
+    color: white;
+    line-height: 150%;
+}
+
+#section-06 div > a{
+    color:#9792E4;
+    background-color: white;
+    padding-inline: 30px;
+    padding-block: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    width: 50%;
+    align-self: center;
+
+}
+
+#section-06 div span{
+    color: white;
+}
+
+#section-06 div span > a{
+    color: white;
+}
+
+footer{
+    background-color: #333333;
+    padding-block: 50px;
+}
+
+footer div{
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+footer div p{
+    color: white;
+}
+
+footer div span{
+    color: white;
+    text-transform: capitalize;
+}
+
+footer div span a{
+    color: #9792E4;
+}
+
+
 @media screen and (max-width: 780px){
     header div{
         width: 90%;
@@ -596,6 +679,14 @@ header div svg{
     #section-05 #container {
         width: 90%;
         padding-inline: 0;
+    }
+
+    #section-06 div{
+        width: 80%;
+    }
+
+    footer div{
+        width: 60%;
     }
 }
 
@@ -719,4 +810,11 @@ header div svg{
         width: 50%;
     }
 
+    #section-06 div{
+        width: 90%;
+    }
+
+    footer div{
+        width: 90%;
+    }
 }
