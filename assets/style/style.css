@@ -467,7 +467,6 @@ header div svg{
         width: 90%;
     }
 
-
     #section-01 > div #larger-box{
         display: flex;
         flex-direction: column;
@@ -564,5 +563,35 @@ header div svg{
         display: flex;
         gap: 10px;
         flex-direction: column;
+    }
+
+    #section-01 > div{
+        width: 90%;
+    }
+    
+    #section-01 > div #larger-box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section-01 > div #larger-box div{
+        flex-basis: 100%;
+    }
+
+    #section-01 > div #larger-box figure{
+        flex-basis: 100%;
+    }
+
+    #section-01 > div #larger-box figure img{
+        width: 70%;
+        margin: 0 auto;
+    }
+ 
+    #section-01 > div #larger-box div a{
+        text-align: center;
+    }
+
+    #section-01 > div div, #section-01 > div #larger-box{
+        flex-basis: 100%;
     }
 }
