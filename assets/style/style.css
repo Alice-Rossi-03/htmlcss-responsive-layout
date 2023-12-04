@@ -13,6 +13,7 @@ header{
     position: fixed;
     width: 100%;
     height: 3em;
+    z-index: 999;
 }
 
 header div{
@@ -74,58 +75,38 @@ header div svg{
     fill: white;
 }
 
-main:first-child section{
+
+
+
+
+
+
+
+
+#section-01{
     background-color: white;
+    padding-bottom: 50px;
+    padding-top: 100px; 
 }
 
-/* main #section-01{
-    padding-block: 100px; 
-}
-
-main #section-01 > div{ 
+#section-01 > div{
     width: 70%;
-    margin: 0 auto;
+    margin: 0 auto; 
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 20px;
 }
 
-main #section-01 > div div{
-    width: calc((100% / 3) - (20px / 3));
+#section-01 > div div{
+    flex-basis: calc(30%);
+    height: 30px;
+    border: 1px solid black;
 }
 
-#larger-box{
-    display: flex; 
-    padding: 20px;
+#section-01 > div #larger-box{
+    flex-basis: calc(60%);
 }
-
-#larger-box figure img{
-    margin-bottom: -20px;
-    height: 50%;
-}
-
-#larger-box div h3{
-    color: #0084FD; 
-}
-
-#larger-box div p{
-    margin-block: 10px;
-    color: gray;
-    line-height: 150%;
-}
-
-#larger-box div button{ 
-    color: white;
-    padding-inline: 20px;
-    padding-block: 5px;
-    background-color: #0084FD; 
-    border-radius: 10px;
-    border: 0;
-}
-
-#larger-box div button:hover{ 
-    background-color: rgba(0, 132, 253, 0.75); 
-} */
 
 #section-02{
     background-color: #9792E4;
@@ -134,16 +115,17 @@ main #section-01 > div div{
 #section-02 > div{ 
     width: 60%;
     margin: 0 auto;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    /* padding-top: 100px; */
+    padding-block: 50px;
     display: flex;
+    align-items: flex-end;
     justify-content: center;
     gap: 30px;
     box-sizing: content-box;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 
-#section-02 div div{
+#section-02 div:first-child div{
     width: calc(50% - (30px / 2));
 }
 
@@ -155,7 +137,7 @@ main #section-01 > div div{
 
 #section-02 div div h3, #section-02 div div p{
     color: white;
-    padding-block: 10px;
+    padding-bottom: 10px;
 }
 
 #section-02 div div p{ 
@@ -171,12 +153,12 @@ main #section-01 > div div{
     width: 100%;
     background-color: white;
     border-radius: 20px;
-    padding: 30px;
+    padding: 0 30px 30px 30px;
     text-align: center;
 }
 
 #section-02 div:nth-child(2) div figure img{
-    width: 100%;
+    width: 60%;
     object-fit: contain;
 }
 
@@ -230,7 +212,6 @@ main #section-01 > div div{
 
 #section-03 #testimonials-bottom div figure{
     width: 30%;
-    border-radius: 50%;
 }
 
 #section-03 #testimonials-bottom div div{
@@ -239,10 +220,12 @@ main #section-01 > div div{
 
 #section-03 #testimonials-bottom div figure img{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
+    clip-path: circle(50%);
     object-fit: contain;
     display: block;
-    border-radius: 50%;
+    /* border-radius: 50%; */
+    z-index: 20; 
 }
 
 #section-03 #testimonials-bottom div div blockquote { 
