@@ -592,6 +592,11 @@ header div svg{
     #section-01 > div #larger-box div a{
         text-align: center;
     }
+
+    #section-05 #container {
+        width: 90%;
+        padding-inline: 0;
+    }
 }
 
 
@@ -699,4 +704,19 @@ header div svg{
     #section-01 > div div, #section-01 > div #larger-box{
         flex-basis: 100%;
     }
+
+    #section-05 #container {
+        width: 90%;
+        padding-inline: 0;
+        flex-direction: column;
+    }
+
+    #section-05 #container #left{
+        width: 100%;
+    }
+
+    #section-05 #container #right{
+        width: 50%;
+    }
+
 }
