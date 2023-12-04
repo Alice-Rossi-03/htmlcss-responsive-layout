@@ -105,7 +105,7 @@ header div svg{
 }
 
 #section-01 > div #larger-box{
-    flex-basis: calc(60%);
+    flex-basis: calc(60% + 30px);
 }
 
 #section-02{
