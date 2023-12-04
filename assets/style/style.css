@@ -412,8 +412,25 @@ header div svg{
         display: block;
     }
 
-    header div svg:hover nav{  
-        display: block; 
+    header div svg:hover + #show{  
+        display: flex; 
+        flex-direction: column;
+        background-color: #0083fd9b;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: end;
+        margin-bottom: -230px;
+        gap: 10px;
+    } 
+
+    header div svg:hover + #show ul{ 
+        display: flex; 
+        flex-direction: column;
+        gap: 10px;
+        text-align: end;
+    }
+    header div svg:hover{  
+        display: none; 
     } 
 
 
