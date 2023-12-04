@@ -398,6 +398,94 @@ header div svg{
 }
 
 
+
+
+
+#section-05{
+    background-color: #ffffff;
+}
+
+#section-05 #container {
+    width: 70%;
+    margin: 0 auto;
+    padding-block: 50px; 
+    padding-inline: 70px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#section-05 #container #left{
+    width: calc(70% - 30px);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#section-05 > div:first-child div h2{
+    font-size: 30px;
+    color: #9792E4;
+}
+
+#section-05 > div:first-child div p{
+    color: gray;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+#section-05 #container #right{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#section-05 #container #right figure{
+    position: relative;
+    aspect-ratio: 1;
+}
+
+#section-05 #container #right figure svg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    fill: #9792E4;
+    z-index: 60;
+}
+
+#section-05 #container #right figure img{ 
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    object-fit: contain;
+} 
+
+#section-05 #container #right h3{
+    color: #9792E4;
+}
+
+#section-05 #container #right a{
+    padding-block: 5px;
+    padding-inline: 10px;
+    font-size: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #9792E4;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#section-05 #container #right a:hover{
+    background-color: rgba(151, 146, 228, 0.75);
+}
+
+#section-05 #container #right a svg{
+    fill: white;
+}
+
 @media screen and (max-width: 780px){
     header div{
         width: 90%;
