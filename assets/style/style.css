@@ -6,6 +6,7 @@
 
 html{
     font-family: 'PT Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 img{
@@ -298,7 +299,10 @@ header div svg{
 }
 
 #section-03 #testimonials-bottom div figure{
-    width: 30%;
+    width: 20%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 #section-03 #testimonials-bottom div div{
@@ -306,10 +310,10 @@ header div svg{
 }
 
 #section-03 #testimonials-bottom div figure img{
-    width: 100%;
-    /* height: 100%; */
+    /* width: 100%; */
+    height: 100%;
     clip-path: circle(50%);
-    object-fit: contain;
+    object-fit: cover;
     display: block;
     /* border-radius: 50%; */
     z-index: 20; 
@@ -475,6 +479,7 @@ header div svg{
     border-radius: 10px;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 5px;
 }
 
@@ -754,7 +759,10 @@ footer div span a{
         text-align: center;
     }
 
-
+    #section-03 #testimonials-bottom div figure{
+        width: 40%;
+    }
+    
     #section-04 > div {
         width: 90%;
     }
